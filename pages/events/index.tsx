@@ -1,5 +1,6 @@
+import Layout from '@/components/Layout';
 import React from 'react';
 
-export default function EventePage() {
-	return <div>EventePage</div>;
+export default function EventsPage() {
+	return <Layout title="Event Page">EventePage</Layout>;
 }

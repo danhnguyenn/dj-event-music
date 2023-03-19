@@ -1,3 +1,4 @@
+import Layout from '@/components/Layout';
 import { useRouter } from 'next/router';
 
 export default function EventPage() {
@@ -6,10 +7,8 @@ export default function EventPage() {
 	console.log(router);
 
 	return (
-		<div>
+		<Layout title="My event">
 			<h1>My Event</h1>
-			<h3>{router.query.slug}</h3>
-			<button onClick={() => router.push('/')}>Home</button>
-		</div>
+		</Layout>
 	);
 }
